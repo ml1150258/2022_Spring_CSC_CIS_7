@@ -32,7 +32,8 @@ int main(int argc, char** argv) {
         <<(y?'T':'F')<<"  "
         <<(!x?'T':'F')<<"  "
         <<(!y?'T':'F')<<"   "
-        <<(x&&y?'T':'F')<<" "
+        <<(x&&y?'T':'F')<<"    "
+        <<(x||y?'T':'F')<<" "
         <<endl;
     
     //Second Row
