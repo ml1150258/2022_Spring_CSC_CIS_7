@@ -18,6 +18,9 @@ int main(int argc, char** argv) {
     const char *r  = u8"\u2705";
     cout << s << endl;
     cout << r << endl;
+    char x=65;//Ascii 65 = 'A'
+    const char *A=&x;
+    cout<<*A<<endl;
     return 0;
 }
 

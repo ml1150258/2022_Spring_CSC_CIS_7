@@ -43,10 +43,10 @@ bool numberAdd(char n1[],char n2[],char r[]){
     //Added the first digit
     bool c=digitAdd(n1[n1cnt--],n2[n2cnt--],r[rcnt--]);
     do{
-    if(n1cnt<0&&n2cnt<0)return c;
-    else if(n1cnt<0)c=digitAdd('0',n2[n2cnt--],r[rcnt--],c);
-    else if(n2cnt<0)c=digitAdd(n1[n1cnt--],'0',r[rcnt--],c);
-    else c=digitAdd(n1[n1cnt--],n2[n2cnt--],r[rcnt--],c);
+        if(n1cnt<0&&n2cnt<0)return c;
+        else if(n1cnt<0)c=digitAdd('0',n2[n2cnt--],r[rcnt--],c);
+        else if(n2cnt<0)c=digitAdd(n1[n1cnt--],'0',r[rcnt--],c);
+        else c=digitAdd(n1[n1cnt--],n2[n2cnt--],r[rcnt--],c);
     }while(true);
 }
 

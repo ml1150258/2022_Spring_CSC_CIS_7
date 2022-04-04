@@ -17,15 +17,15 @@ bool numberAdd(char [],char [],char []);
 
 int main(int argc, char** argv) {
     //Create the test numbers using character arrays
-    char number1[]="ABCDEF1234567890ABCDEF";
-    char number2[]="423451AAAABBBBBCCCCDDD";
+    char number1[]="1234567ABCDEF1234567890ABCDEF";
+    char number2[]="623451AAAABBBBBCCCCDDD";
     char result[sizeResult(number1,number2)];
     //Add the numbers
-    cout<<setw(30)<<number1<<endl;
-    cout<<setw(30)<<number2<<endl;
+    cout<<setw(50)<<number1<<endl;
+    cout<<setw(50)<<number2<<endl;
     bool x=numberAdd(number1,number2,result);
     if(x)cout<<"overflow"<<endl;
-    else cout<<setw(30)<<result<<endl;
+    else cout<<setw(50)<<result<<endl;
 
     return 0;
 }
