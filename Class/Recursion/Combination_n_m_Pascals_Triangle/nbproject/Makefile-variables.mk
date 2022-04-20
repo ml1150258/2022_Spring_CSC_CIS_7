@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=cpptemplate
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/cpptemplate
+CND_ARTIFACT_NAME_Debug=combination_n_m
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/combination_n_m
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=cpptemplate.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/cpptemplate.tar
+CND_PACKAGE_NAME_Debug=combinationnm.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/combinationnm.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=cpptemplate
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/cpptemplate
+CND_ARTIFACT_NAME_Release=combination_n_m
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/combination_n_m
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=cpptemplate.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/cpptemplate.tar
+CND_PACKAGE_NAME_Release=combinationnm.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/combinationnm.tar
 #
 # include compiler specific variables
 #
