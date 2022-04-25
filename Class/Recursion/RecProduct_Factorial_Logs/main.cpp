@@ -29,18 +29,20 @@ int main(int argc, char** argv){
     int n;
     
     //Initialize Variables
-    n=1000;
+    n=10000;
     
     //Map inputs to outputs -> i.e. process the inputs
     
     //Display the outputs
     float fraction;
     int powr10=display(recProd(n),fraction);
-    cout<<"Recursive Product/Factorial f("<<n<<")="<<pow(10,fraction)<<"x10^"<<powr10<<endl;
+    cout<<"Recursive Product/Factorial f("<<n<<")="
+            <<pow(10,fraction)<<"x10^"<<powr10<<endl;
     powr10=display(forProd(n),fraction);
-    cout<<"Recursive Product/Factorial f("<<n<<")="<<pow(10,fraction)<<"x10^"<<powr10<<endl;
-    //Clean up - File closing, memory de-allocation, etc....
+    cout<<"For-Loop  Product/Factorial f("<<n<<")="
+            <<pow(10,fraction)<<"x10^"<<powr10<<endl;
 
+    
     //Exit Stage Right!
     return 0;
 }
@@ -58,7 +60,7 @@ int display(float logRep,float &mantissa){
 
 float recProd(float n){
     //Base Condition
-    if(n==1)return 0;
+    if(n<=1)return 0;
     //Recursion
     return recProd(n-1)+log(n);
 }

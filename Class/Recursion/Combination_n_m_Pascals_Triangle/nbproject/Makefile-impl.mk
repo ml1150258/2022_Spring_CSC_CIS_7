@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Combination_n_m
+PROJECTNAME=Combination_n_m_Pascals_Triangle
 
 # Active Configuration
 DEFAULTCONF=Debug

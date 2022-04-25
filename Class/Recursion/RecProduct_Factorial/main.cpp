@@ -16,15 +16,15 @@ using namespace std;  //Library Scope
 //Science and Math, Conversions, Higher Dimensions const to follow
 
 //Function Prototypes
-int recProd(int);
-int forProd(int);
+unsigned int recProd(unsigned int);
+unsigned int forProd(unsigned int);
 
 //Execution Starts Here
 int main(int argc, char** argv){
     //Set Random Number Seed Here
     
     //Declare Variables - Known and Unknown, units, range, description
-    int n;
+    unsigned int n;
     
     //Initialize Variables
     n=10;
@@ -43,16 +43,15 @@ int main(int argc, char** argv){
 
 //Function Implementations
 
-int recProd(int n){
+unsigned int recProd(unsigned int n){
     //Base Condition
-    if(n<=0)return 0;
-    if(n==1)return 1;
+    if(n<=1)return 1;
     //Recursion
     return recProd(n-1)*n;
 }
 
-int forProd(int n){
-    int prod=1;
+unsigned int forProd(unsigned int n){
+    unsigned int prod=1;
     for(int i=1;i<=n;i++){
         prod*=i;
     }

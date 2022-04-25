@@ -16,9 +16,9 @@ using namespace std;  //Library Scope
 //Science and Math, Conversions, Higher Dimensions const to follow
 
 //Function Prototypes
-int recSum(int);
-int forSum(int);
-int clsSum(int);
+int recSum(int);//Recursive Sum
+int forSum(int);//For-Loop Sum
+int clsSum(int);//Closed form solution of the incremental sum
 
 //Execution Starts Here
 int main(int argc, char** argv){
@@ -28,7 +28,7 @@ int main(int argc, char** argv){
     int n;
     
     //Initialize Variables
-    n=10000;
+    n=10;
     
     //Map inputs to outputs -> i.e. process the inputs
     
@@ -47,8 +47,7 @@ int main(int argc, char** argv){
 
 int recSum(int n){
     //Base Condition
-    if(n<=0)return 0;
-    if(n==1)return 1;
+    if(n<=1)return 1;
     //Recursion
     return recSum(n-1)+n;
 }

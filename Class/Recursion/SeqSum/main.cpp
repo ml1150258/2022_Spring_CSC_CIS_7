@@ -30,16 +30,16 @@ int main(int argc, char** argv){
     
     //Initialize Variables
     p=0;
-    c=1.0f;
+    c=1.05f;
     d=10000.0f;
     n=50;
     
     //Map inputs to outputs -> i.e. process the inputs
     
     //Display the outputs
-    cout<<"Recursive Seq f("<<p<<","<<c<<","<<d<<","<<n<<")="
+    cout<<"Recursive Seq f("<<p<<","<<c<<","<<d<<","<<n<<")  ="
             <<recSeq(p,c,d,n)<<endl;
-    cout<<"For-Loop Seq f("<<p<<","<<c<<","<<d<<","<<n<<")="
+    cout<<"For-Loop Seq f("<<p<<","<<c<<","<<d<<","<<n<<")   ="
             <<forSeq(p,c,d,n)<<endl;
     cout<<"Closed form Seq f("<<p<<","<<c<<","<<d<<","<<n<<")="
             <<clsSeq(p,c,d,n)<<endl;
@@ -71,5 +71,7 @@ float forSeq(float p,float c,float d,int n){
 float clsSeq(float p,float c,float d,int n){
     if(c==1)return p+n*d;
     float cton=pow(c,n);
-    return p*cton+d*(1-cton)/(1-c);
+    float i=c-1;
+    //return p*cton+d*(1-cton)/(1-c);
+    return p*cton+d/i*(cton-1);
 }
